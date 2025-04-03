@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de imc</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="https://th.bing.com/th/id/OIP.3Yio_Mp3M-M9VxnLfVQw_gHaCA?rs=1&pid=ImgDetMain" alt="Logo">
+        
+            <nav>
+                <ul>
+                    <li>Início</li>
+                    <li>Nutrição</li>
+                    <li>Bem-Estar</li>
+                    <li>Gravidez</li>
+                </ul>
+            </nav>
+    
+    </header>
+    <main>
+    <section>
+        <h1>Calculadora IMC</h1>
+        <h2>Oque e o IMC?</h2>
+        <p>O IMC, ou Índice de Massa Corporal, é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.</p>
+        <p>O IMC é uma fórmula utilizada por vários profissionais de saúde, incluindo médicos, nutricionistas, profissionais de educação física e enfermeiros, para saber, de uma forma rápida, se a pessoa está com o peso adequado ou se precisa ganhar ou perder peso.</p>
+        <p>Embora seja uma ferramenta muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva em consideração a composição corporal. Por isso, no caso de atletas (que têm maior quantidade de massa muscular), é aconselhado usar outras técnicas, como a bioimpedância, para uma avaliação mais verdadeira da composição corporal. Entenda como é feita a bioimpedância.</p>
+        <div class="img-balança img-site">
+            <img src="https://image.tuasaude.com/media/article/uu/cs/imc_61177.jpg?width=468&height=312" alt="Subindo na balança">
+        </div>
+
+        <h2> Como calculo o IMC?</h2>
+        <p>O cálculo do IMC é feito usando a seguinte fórmula: peso (kg) ÷ (altura x altura) (m).</p>
+        <p>Mas você também pode saber se está dentro do peso ideal utilizando a nossa calculadora de IMC</p>
+
+        <div class="calculadora-imc">
+            <form action="javascript:void(0)" id="form-imc">
+                <fieldset>
+                    <label for="nome"> Nome:</label>
+                    <input type="text" id="nome" 
+                name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="peso"> Peso em kg:</label>
+                    <input type="number" id="peso"  placeholder="ex:80" name="peso" required>
+
+                    <label for="altura"> Altura em cm</label>
+                    <input type="number" id="altura"  placeholder="ex:175" name="altura" required>
+
+                    <button type="submit" id="btn">Calcular</button>
+                    
+                    <p id="valor-imc"></p>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>
