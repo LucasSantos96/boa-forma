@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de imc</title>
-    <script src="script.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header class="cabecalho">
-        <img src="https://th.bing.com/th/id/OIP.3Yio_Mp3M-M9VxnLfVQw_gHaCA?rs=1&pid=ImgDetMain" alt="Logo">
+       <div class="logo-cabecalho">
+           <h2><img class="logo" src="img/better-health.png" alt="Logo">Saude total</h2>
+       </div>
         
             <nav>
-                <ul>
+                <ul class="nav-list nav-cabecalho">
                     <li>Início</li>
                     <li>Nutrição</li>
                     <li>Bem-Estar</li>
@@ -20,15 +23,15 @@
             </nav>
     
     </header>
-    <main>
+    <main class="container">
     <section>
-        <h1>Calculadora IMC</h1>
-        <h2>Oque e o IMC?</h2>
+        <h1 class="title">Calculadora IMC</h1>
+        <h2 class="subtitle">Oque e o IMC?</h2>
         <p>O IMC, ou Índice de Massa Corporal, é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.</p>
         <p>O IMC é uma fórmula utilizada por vários profissionais de saúde, incluindo médicos, nutricionistas, profissionais de educação física e enfermeiros, para saber, de uma forma rápida, se a pessoa está com o peso adequado ou se precisa ganhar ou perder peso.</p>
         <p>Embora seja uma ferramenta muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva em consideração a composição corporal. Por isso, no caso de atletas (que têm maior quantidade de massa muscular), é aconselhado usar outras técnicas, como a bioimpedância, para uma avaliação mais verdadeira da composição corporal. Entenda como é feita a bioimpedância.</p>
         <div class="img-balança img-site">
-            <img src="https://image.tuasaude.com/media/article/uu/cs/imc_61177.jpg?width=468&height=312" alt="Subindo na balança">
+            <img src="img/imc_61177.webp" alt="Subindo na balança">
         </div>
 
         <h2> Como calculo o IMC?</h2>
@@ -47,14 +50,68 @@
 
                     <label for="altura"> Altura em cm</label>
                     <input type="number" id="altura"  placeholder="ex:175" name="altura" required>
-
-                    <button type="submit" id="btn">Calcular</button>
+<div class="btn">
+    
+                        <button type="submit" id="btn">Calcular</button>
+</div>
                     
                     <p id="valor-imc"></p>
                 </fieldset>
             </form>
         </div>
     </section>
+    <section>
+        <h2>Como melhorar o resultado do IMC</h2>
+        <p>Quando o resultado do IMC não é o ideal, existem alguns cuidados que podem ajudar a atingir o valor ideal:</p>
+        
+        <h3>Como Reduzir o IMC de Forma Saudável</h3>
+        <p>Se o seu Índice de Massa Corporal (IMC) está acima do recomendado, reduzir o peso de forma equilibrada pode trazer diversos benefícios para a saúde, como mais disposição, melhora na circulação sanguínea e redução do risco de doenças cardiovasculares. Aqui estão algumas estratégias eficazes para diminuir o IMC com saúde:</p>
+         <ul>
+            <li>Mantenha uma alimentação equilibrada com frutas, verduras e proteínas magras</li>
+            <li>Evite alimentos ultraprocessados e ricos em açúcares</li>
+            <li>Pratique atividades físicas regularmente (como caminhada, corrida ou musculação)</li>
+            <li>Beba bastante água ao longo do dia</li>
+            <li>Durma bem e cuide da qualidade do sono</li>
+            <li>Gerencie o estresse com atividades relaxantes</li>
+            <li>Estabeleça metas realistas e acompanhe seu progresso</li>
+         </ul>
+
+         <h3>Como Aumentar o IMC de Forma Saudável</h3>
+         <p>Se o seu IMC está abaixo do ideal, é possível ganhar peso de maneira saudável seguindo algumas estratégias:</p>
+         <ul>
+            <li>Aumente a ingestão calórica: Consuma mais calorias do que gasta, optando por alimentos nutritivos.</li>
+            <li>Priorize proteínas: Carnes, ovos, leite e leguminosas ajudam na construção muscular.</li>
+            <li>Inclua gorduras saudáveis: Abacate, azeite de oliva, oleaginosas e peixes são boas opções.</li>
+            <li>Fracione as refeições: Coma a cada 3 horas para manter um bom aporte de nutrientes.</li>
+            <li>Pratique musculação: O treino de força estimula o ganho de massa muscular.</li>
+            <li>Evite calorias vazias: Prefira alimentos naturais e evite excesso de açúcar e fast food.</li>
+            <li>Durma bem: O descanso adequado é essencial para o ganho de peso saudável.</li>
+         </ul>
+
+         <h3>Por que é importante manter o peso ideal?</h3>
+         <p>Manter o peso adequado não é apenas uma questão estética, mas também de saúde e bem-estar. Um IMC equilibrado contribui para:</p>
+         <ul>
+            <li>Prevenção de doenças: Reduz o risco de diabetes tipo 2, hipertensão, doenças cardiovasculares e alguns tipos de câncer.</li>
+            <li>Melhor desempenho físico: Facilita a mobilidade, fortalece músculos e articulações e melhora a resistência.</li>
+            <li>Sistema imunológico fortalecido: Um peso adequado ajuda o corpo a combater infecções e doenças.</li>
+            <li>Saúde mental e emocional: Estar no peso ideal pode melhorar a autoestima e reduzir o risco de ansiedade e depressão.</li>
+            <li>Qualidade de vida: Ter energia para realizar atividades do dia a dia e evitar problemas de saúde aumenta a longevidade e o bem-estar geral. </li>
+         </ul>
+    </section>
 </main>
+<footer class="rodape">
+    <div class="logo-cabecalho">
+        <h2><img class="logo" src="img/better-health.png" alt="Logo">Saude total</h2>
+    </div>
+        
+    <nav>
+        <ul class="nav-list">
+            <li>Início</li>
+            <li>Nutrição</li>
+            <li>Bem-Estar</li>
+            <li>Gravidez</li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white-1: #edfaff;
+    --white-2:#F3EBF3;
+    --blue-1: #295773;
+    --blue-3:#295D7D;
+    --green:#7AAC6C;
+    --grey:#c8d7e4d5;
+    --black:#1b1a1a;
+    --black-2:#3e3d3d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins","Montserrat", sans-serif;
+}
+body{
+    background-color: var(--white-1);
+}
+h1,h2,h3{
+    font-family: "Montserrat";
+}
+h2{
+    color: var(--black);
+}
+p{
+    color:var(--black-2);
+    font-size: 15px;
+    margin: 10px 0px;
+
+}
+.title{
+    margin: 8px 0px;
+}
+.subtitle{
+    margin: 16px 0px;
+
+}
+.cabecalho{
+    border-bottom: 1px solid #C8D7E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+.logo-cabecalho{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    padding-right: 10px;
+}
+.nav-cabecalho{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    gap: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+li:hover {
+    color: var(--blue-3);
+}
+li{
+    margin: 8px 0px;
+    font-size: 14px;
+}
+.container{
+    padding: 70px 150px;
+}
+.img-balança img{
+    margin: 32px 0px;
+    width: 600px;
+}
+fieldset{
+    border-radius: 5px;
+    padding: 16px ;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px;
+    border: 1px solid #3e3d3d1a;
+    background-color: var(--grey);
+}
+input{
+    margin: 4px 0px;
+    border: none;
+    padding: 4px;
+    box-shadow: -1px 3px 13px -3px rgba(0, 0, 0, 0.087);
+    border-radius: 4px;
+}
+label{
+    color: var(--black-2);
+    font-size: 14px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    margin-top: 20px;
+    width: 100px;
+    background-color: var(--blue-3);
+    color: var(--white-2);
+    border-radius: 12px;
+    border: none;
+    padding: 4px;
+    box-shadow: -1px 3px 13px -3px rgba(0, 0, 0, 0.172);
+    cursor: pointer;
+
+    
+}
+#btn:hover{
+    background-color: var(--green);
+}
+
+#valor-imc{
+    font-weight: 700;
+    margin: 20px 0px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    background-color: var(--grey);
+    border-top: 1px solid #3e3d3d3e;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px;
+
+}
+footer ul{
+display: flex;
+gap:16px;
+list-style: none;
+}
