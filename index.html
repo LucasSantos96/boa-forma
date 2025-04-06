@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculo de imc</title>
+    <title>Saúde total</title>
     <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -12,13 +12,15 @@
        <div class="logo-cabecalho">
            <h2><img class="logo" src="img/better-health.png" alt="Logo">Saude total</h2>
        </div>
-        
-            <nav>
-                <ul class="nav-list nav-cabecalho">
-                    <li>Início</li>
-                    <li>Nutrição</li>
-                    <li>Bem-Estar</li>
-                    <li>Gravidez</li>
+        <div class="btn-menu" id="btn-menu">
+            <img src="img/icons/hamburger.png" alt="icon menu">
+        </div>
+            <nav class="nav-list nav-cabecalho sidebar-menu" id="sidebar-menu">
+                <ul >
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Nutrição</a></li>
+                    <li><a href="#">Bem-Estar</a></li>
+                    <li><a href="#">Gravidez</a></li>
                 </ul>
             </nav>
     
@@ -66,7 +68,7 @@
         
         <h3>Como Reduzir o IMC de Forma Saudável</h3>
         <p>Se o seu Índice de Massa Corporal (IMC) está acima do recomendado, reduzir o peso de forma equilibrada pode trazer diversos benefícios para a saúde, como mais disposição, melhora na circulação sanguínea e redução do risco de doenças cardiovasculares. Aqui estão algumas estratégias eficazes para diminuir o IMC com saúde:</p>
-         <ul>
+         <ul class="list-health">
             <li>Mantenha uma alimentação equilibrada com frutas, verduras e proteínas magras</li>
             <li>Evite alimentos ultraprocessados e ricos em açúcares</li>
             <li>Pratique atividades físicas regularmente (como caminhada, corrida ou musculação)</li>
@@ -78,7 +80,7 @@
 
          <h3>Como Aumentar o IMC de Forma Saudável</h3>
          <p>Se o seu IMC está abaixo do ideal, é possível ganhar peso de maneira saudável seguindo algumas estratégias:</p>
-         <ul>
+         <ul class="list-health">
             <li>Aumente a ingestão calórica: Consuma mais calorias do que gasta, optando por alimentos nutritivos.</li>
             <li>Priorize proteínas: Carnes, ovos, leite e leguminosas ajudam na construção muscular.</li>
             <li>Inclua gorduras saudáveis: Abacate, azeite de oliva, oleaginosas e peixes são boas opções.</li>
@@ -90,7 +92,7 @@
 
          <h3>Por que é importante manter o peso ideal?</h3>
          <p>Manter o peso adequado não é apenas uma questão estética, mas também de saúde e bem-estar. Um IMC equilibrado contribui para:</p>
-         <ul>
+         <ul class="list-health">
             <li>Prevenção de doenças: Reduz o risco de diabetes tipo 2, hipertensão, doenças cardiovasculares e alguns tipos de câncer.</li>
             <li>Melhor desempenho físico: Facilita a mobilidade, fortalece músculos e articulações e melhora a resistência.</li>
             <li>Sistema imunológico fortalecido: Um peso adequado ajuda o corpo a combater infecções e doenças.</li>
@@ -100,18 +102,25 @@
     </section>
 </main>
 <footer class="rodape">
-    <div class="logo-cabecalho">
-        <h2><img class="logo" src="img/better-health.png" alt="Logo">Saude total</h2>
+    <div class="content-footer">
+        <div class="logo-cabecalho logo-footer">
+            <h2><img class="logo " src="img/better-health.png" alt="Logo">Saude total</h2>
+        </div>
+      <div>
+          
+          <nav>
+              <ul class="nav-list list-footer">
+                  <li>Início</li>
+                  <li>Nutrição</li>
+                  <li>Bem-Estar</li>
+                  <li>Gravidez</li>
+              </ul>
+          </nav>
+      </div>
     </div>
-        
-    <nav>
-        <ul class="nav-list">
-            <li>Início</li>
-            <li>Nutrição</li>
-            <li>Bem-Estar</li>
-            <li>Gravidez</li>
-        </ul>
-    </nav>
+    <div class="creat">
+        <p>Criado por <a class="creat-link" href="https://github.com/LucasSantos96" target="_blank">Lucas Santos</a></p>
+    </div>
 </footer>
 </body>
 </html>

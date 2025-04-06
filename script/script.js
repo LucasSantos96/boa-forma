@@ -1,8 +1,24 @@
+
+//seleciona o botão do menu
+let btnMenu  = document.getElementById('btn-menu');
+
+// Adiciona um evento de clique ao botão
+btnMenu.addEventListener('click',()=>{
+    let menu = document.getElementById('sidebar-menu');
+//adiciona a classe active  depois do botão ser clicado
+    menu.classList.toggle('active')
+})
+
+
+
+
 // Seleciona o botão com o ID 'btn' do HTML
 let btn = document.getElementById('btn');
 
 // Seleciona o elemento onde o resultado do IMC será exibido, com o ID 'valor-imc'
 let mostraValor = document.getElementById('valor-imc');
+
+
 
 // Adiciona um evento de clique ao botão
 btn.addEventListener('click', (e) => {
@@ -51,4 +67,10 @@ btn.addEventListener('click', (e) => {
         // Exibe a mensagem correspondente no elemento 'mostraValor'
         mostraValor.innerText = `Olá ${nome} seu IMC é: ${imc.toFixed(2)} o que indica Obesidade grau 3. `;
     }
+
+     // ZERAR CAMPOS após cálculo:
+  document.getElementById('nome').value = '';
+  document.getElementById('peso').value = '';
+  document.getElementById('altura').value = '';
+    
 });

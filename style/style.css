@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
+    --white:#fff;
     --white-1: #edfaff;
     --white-2:#F3EBF3;
     --blue-1: #295773;
@@ -19,6 +20,10 @@
 }
 body{
     background-color: var(--white-1);
+    overflow-x: hidden;
+}
+h1{
+    font-size: 32px;
 }
 h1,h2,h3{
     font-family: "Montserrat";
@@ -45,6 +50,7 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 20px 150px;
+    
 }
 .logo-cabecalho{
     display: flex;
@@ -56,25 +62,46 @@ p{
 }
 .nav-cabecalho{
     display: flex;
-    list-style: none;
     cursor: pointer;
-    gap: 16px;
     font-size: 15px;
     font-weight: 500;
 }
+.nav-cabecalho ul{
+    display: flex;
+    gap: 16px;
+
+}
 li:hover {
     color: var(--blue-3);
+
 }
 li{
     margin: 8px 0px;
     font-size: 14px;
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    color: var(--black-2);
+
+}
+a:hover{
+    text-decoration: underline;
+    color: var(--blue-3);
+}
+.btn-menu{
+    display: none;
+
 }
 .container{
-    padding: 70px 150px;
+    margin:70px auto ;
+    width: 600px;
 }
 .img-balança img{
     margin: 32px 0px;
     width: 600px;
+    
 }
 fieldset{
     border-radius: 5px;
@@ -122,17 +149,136 @@ label{
     margin: 20px 0px;
     text-align: center;
 }
+.list-health{
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: -1px 3px 13px -3px rgba(0, 0, 0, 0.172);
+    margin: 30px auto;
+    
+   
+}
+.list-health li{
+    list-style: square;
+    margin-left: 10px;
+}
 footer{
     display: flex;
     background-color: var(--grey);
     border-top: 1px solid #3e3d3d3e;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 150px;
+    flex-direction: column;
+    padding-top: 40px;
+
 
 }
 footer ul{
 display: flex;
 gap:16px;
 list-style: none;
+}
+.content-footer{
+    display: flex;
+   gap: 100px;
+    margin-bottom: 40px;
+    
+}
+.creat{
+    background-color: var(--blue-3);
+    width: 100vw;
+    text-align: center;
+    padding: -10px;
+   
+}
+.creat p {
+    font-size: 12px;
+    color: var(--white);
+    margin: 2px;
+}
+.creat a{
+    cursor: pointer;
+    color: var(--black);
+    text-decoration: none;
+}
+.creat-link:hover{
+    color: var(--green);
+}
+
+@media (max-width:800px) {
+
+  
+          
+.btn-menu{
+    display: block;
+    cursor:pointer;
+    position:absolute ;
+    top: 20px;
+    right: 100px;
+    z-index: 1100;
+    
+}
+.cabecalho{
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 20px 50px;
+}
+.container{
+    width: 400px;
+}
+.img-balança img{
+    width: 400px;
+}
+.sidebar-menu{
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    top: 0;
+    right: -200px;
+    box-shadow: -1px 3px 13px -3px rgba(0, 0, 0, 0.27);
+    
+}
+.sidebar-menu ul{
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+.active {
+    right: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .list-footer{
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2px;
+  }
+  .content-footer{
+      display: flex;
+  }
+  .creat{
+    background-color: var(--blue-3);
+    width: 100%;
+  }
+}
+@media (max-width:660px) {
+    .img-balança img{
+        width: 300px; 
+    }
+    .container{
+        width: 300px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h2, h3{
+        font-size: 20px;
+    }
+   
 }
