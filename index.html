@@ -4,27 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saúde total</title>
-    <script src="script/script.js" defer></script>
+    <script src="script/index.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./content/gravidez.css">
+    <script src="script/carrossel.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
-       <div class="logo-cabecalho">
-           <h2><img class="logo" src="img/better-health.png" alt="Logo">Saude total</h2>
+       <div class="header-content">
+           <div class="logo-cabecalho">
+               <h2><img class="logo" src="img/better-health.png" alt="Logo">Boa Forma</h2>
+           </div>
+            <div class="btn-menu" id="btn-menu">
+                <img src="img/icons/hamburger.png" alt="icon menu">
+            </div>
+                <div>
+                    <nav class="nav-list nav-cabecalho sidebar-menu" id="sidebar-menu">
+                        <ul >
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="#">Nutrição</a></li>
+                            <li><a href="#">Bem-Estar</a></li>
+                            <li><a href="content/gravidez.html">Gravidez</a></li>
+                        </ul>
+                    </nav>
+                </div>
        </div>
-        <div class="btn-menu" id="btn-menu">
-            <img src="img/icons/hamburger.png" alt="icon menu">
-        </div>
-            <nav class="nav-list nav-cabecalho sidebar-menu" id="sidebar-menu">
-                <ul >
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#">Nutrição</a></li>
-                    <li><a href="#">Bem-Estar</a></li>
-                    <li><a href="#">Gravidez</a></li>
-                </ul>
-            </nav>
     
     </header>
+
+     <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <h2 class="title-img">Calcule o seu Imc</h2>
+                <a href="index.html"><img  src="https://img.freepik.com/free-photo/woman-bathroom-scale-ai-generated-image_268835-6823.jpg?t=st=1747003742~exp=1747007342~hmac=ae27febdeadafb8b055020d10b3ad6f7cec2f0cd7f1e228f22453e2f5fd0a0d1&w=900" alt="balança"></a>
+               
+            </div>
+             <div class="slide">
+                <h2 class="title-img">Guia Completo sobre Nutrição</h2>
+               <a href="#"><img  src="https://img.freepik.com/free-photo/world-health-day-celebration-with-healthy-food_23-2151244692.jpg?t=st=1747003788~exp=1747007388~hmac=155f0e51290cd586b366dc43562c35893a5075bb3b32ee2e03de68cc1858d4d3&w=900" alt="Nutrição"></a>
+
+            </div> 
+            <div class="slide">
+                <h2 class="title-img bemestar">Cuide do seu Bem Estar</h2>
+               <a href="#"><img  src="https://img.freepik.com/free-photo/fit-man-practicing-yoga_23-2151745576.jpg?t=st=1747003849~exp=1747007449~hmac=dbe5337380ba43494d58b2c6201dbe4065a2d6ff59895e0e326e3b27894e7844&w=900" alt="Bem estar"></a>
+            </div> 
+            <div class="slide">
+                <h2 class="title-img">Guia Completo sobre Gravidez</h2>
+               <a href="./content/gravidez.html"><img  src="https://img.freepik.com/free-photo/black-pregnant-women-posing_23-2151446179.jpg?t=st=1747004584~exp=1747008184~hmac=11e8a8c7532f15ad13a9b1237ce5cb02e44b6de2de535b4cdf04bad6eb24b7f5&w=740" alt="Mulher grávida"></a>
+            </div>
+            
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        
+    </div>
+
+
     <main class="container">
     <section>
         <h1 class="title">Calculadora IMC</h1>

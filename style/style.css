@@ -35,8 +35,8 @@ p{
     color:var(--black-2);
     font-size: 15px;
     margin: 10px 0px;
-
 }
+
 .title{
     margin: 8px 0px;
 }
@@ -48,9 +48,15 @@ p{
     border-bottom: 1px solid #C8D7E4;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 150px;
+    justify-content: center;
+    padding: 20px;
     
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 120px;
+   
 }
 .logo-cabecalho{
     display: flex;
@@ -115,9 +121,11 @@ fieldset{
 input{
     margin: 4px 0px;
     border: none;
-    padding: 4px;
+    padding: 4px 12px;
     box-shadow: -1px 3px 13px -3px rgba(0, 0, 0, 0.087);
     border-radius: 4px;
+    outline: none;
+    
 }
 label{
     color: var(--black-2);

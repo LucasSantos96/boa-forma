@@ -74,3 +74,5 @@ btn.addEventListener('click', (e) => {
   document.getElementById('altura').value = '';
     
 });
+
+
