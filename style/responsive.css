@@ -125,3 +125,35 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .img-site, .img-section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img-site img, .img-section {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .img-site, .img-section {
+        margin: 20px 0;
+    }
+
+    .img-site img, .img-section {
+        border-radius: 4px;
+    }
+}

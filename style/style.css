@@ -104,10 +104,25 @@ a:hover{
     margin:70px auto ;
     width: 600px;
 }
-.img-balança img{
+.img-site {
+    width: 100%;
+    max-width: 600px;
     margin: 32px 0px;
-    width: 600px;
-    
+}
+
+.img-site img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.img-section {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 32px 0px;
 }
 fieldset{
     border-radius: 5px;
@@ -177,6 +192,7 @@ footer{
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
+    
 
 
 }
@@ -184,7 +200,9 @@ footer ul{
 display: flex;
 gap:16px;
 list-style: none;
+
 }
+
 .content-footer{
     display: flex;
    gap: 100px;
@@ -210,4 +228,13 @@ list-style: none;
 }
 .creat-link:hover{
     color: var(--green);
+}
+.list-footer li a {
+    color:var(--black-2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list-footer li a:hover {
+    color: var(--blue-1);
 }
